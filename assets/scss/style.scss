@@ -1,0 +1,132 @@
+
+@import "libs/button";
+@import "libs/header";
+@import "libs/footer";
+@import "libs/fonts";
+@import "libs/form";
+@import "libs/popups";
+@import "libs/fontello";
+@import 'libs/normalize.scss';
+@import "libs/jquery.mCustomScrollbar";
+@import "libs/animate";
+@import 'libs/fm.revealator.jquery';
+
+body {
+    position: relative;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+.slick-arrow{
+    top: auto;
+    background-image: none;
+}
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans-Regular';
+    outline: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Manrope-Regular';
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+button{
+    border: none;
+}
+
+.container{
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.banner{
+    .text_banner{
+        h2{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+            align-items: flex-end;
+            color: #FFFFFF;
+            letter-spacing: 0.4px;
+        }
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+}
+.title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #13282D;
+    padding: 40px 0 33px;
+    letter-spacing: 0.2px;
+    span{
+        display: block;
+    }
+    &.white{
+        color: #ffffff;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 648px;
+        padding: 0;
+
+    }
+}
+@media (min-width: 1024px){
+    .container {
+        width: 864px;
+    }
+}
+@media (min-width: 1280px){
+    .container {
+        width: 1080px;
+    }
+
+
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 1920px) {
+    .container {
+        width: 1448px;
+    }
+
+}

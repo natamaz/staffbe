@@ -1,0 +1,22 @@
+.btn{
+  border-radius: 100px;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  max-width: 288px;
+  letter-spacing: 0.3px;
+  &.btn_white{
+    background: #FFFFFF;
+    color: #409AAE;
+  }
+  &.green{
+    background: #409AAE;
+    color: #FFFFFF;
+  }
+
+}
