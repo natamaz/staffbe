@@ -8,7 +8,7 @@ $(document).ready(function () {
 
     <!-- Scroll -->
     $('#scrollto').on('click', function() {
-        $('html,body').animate({scrollTop:$('.section_2').offset().top+"px"},{duration:1E3});
+        $('html,body').animate({scrollTop:$('.section').offset().top+"px"},{duration:1E3});
 
     });
     <!-- Scroll and -->
@@ -26,11 +26,17 @@ $(document).ready(function () {
 
     <!-- Accordion -->
     $( function() {
-        $( ".accordion" ).accordion({
-            collapsible: true,
-
+        $( "#accordion" ).accordion({
+            collapsible: true
         });
     } );
+    $( function() {
+        $( "#accordionFooter" ).accordion({
+            active: false,
+            collapsible: true
+        });
+    } );
+
     <!-- Accordion and -->
 
     <!-- Menu -->

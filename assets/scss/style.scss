@@ -10,7 +10,10 @@
 @import "libs/jquery.mCustomScrollbar";
 @import "libs/animate";
 @import 'libs/fm.revealator.jquery';
-
+@import "libs/slick";
+@import "libs/slider";
+@import "libs/responsive-tabs";
+@import "libs/jquery-ui";
 body {
     position: relative;
     height: 100%;
@@ -115,18 +118,23 @@ button{
 @media (min-width: 1280px){
     .container {
         width: 1080px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title{
+        font-size: 32px;
+        line-height: 40px;
+        padding: 113px 0 33px 2px;
+        width: 25%;
+    }
+    .content{
+        width: 75%;
     }
 
 
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
     .container {
-        width: 1170px;
+        width: 1220px;
     }
-}
-@media (min-width: 1920px) {
-    .container {
-        width: 1448px;
-    }
-
 }
