@@ -26,14 +26,10 @@ $(document).ready(function () {
 
     <!-- Accordion -->
     $( function() {
-        $( "#accordion" ).accordion({
-            collapsible: true
-        });
-    } );
-    $( function() {
         $( "#accordionFooter" ).accordion({
             active: false,
-            collapsible: true
+            collapsible: true,
+            heightStyle: "content"
         });
     } );
 

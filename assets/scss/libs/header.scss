@@ -97,7 +97,7 @@
       transform-origin: right top;
       transform: scale(0);
       visibility: hidden;
-      transition: all 0.4s ease-in-out;
+      transition: all 0.6s ease-in-out;
       overflow: hidden;
       &.open {
         opacity: 0.99;
@@ -106,29 +106,6 @@
         z-index: 3;
         li {
           display: block;
-          animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5)
-          forwards;
-          animation-delay: 0.4s;
-          transform: rotate(-7deg);
-          transform-origin: right bottom;
-          &:nth-of-type(2) {
-            animation-delay: 0.4s;
-          }
-          &:nth-of-type(3) {
-            animation-delay: 0.5s;
-          }
-          &:nth-of-type(4) {
-            animation-delay: 0.6s;
-          }
-          &:nth-of-type(5) {
-            animation-delay: 0.7s;
-          }
-          &:nth-of-type(6) {
-            animation-delay: 0.8s;
-          }
-          &:nth-of-type(7) {
-            animation-delay: 0.9s;
-          }
         }
       }
     }
@@ -146,8 +123,7 @@
         li {
           display: block;
           position: relative;
-          opacity: 0;
-          width: 100%;
+         width: 100%;
           margin: 0 0 32px 0;
           a {
             display: inline-block;
@@ -226,7 +202,7 @@
         visibility: initial;
         overflow: hidden;
         width: 65%;
-        padding: 7px 90px 7px 15px;
+        padding: 7px 5px 7px 5px;
         height: 100%;
         transition: all .4s ease-in-out;
         transform: scale(1);

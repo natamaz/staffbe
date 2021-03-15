@@ -36,6 +36,7 @@ footer{
         }
       }
       .ui-accordion-content{
+        padding: 20px 0 0;
         h3{
           display: none;
         }
@@ -72,16 +73,18 @@ footer{
               color: rgba(234, 234, 234, 0.5);
               transform: translate(2px,2px);
             }
-            &.icon-instagram-filled{
+            &.icon-instagram{
               &:before{
-                font-size: 20px;
-                transform: translate(8px,4px);
+                font-size: 35px;
+                transform: translate(1px,-1px);
               }
             }
-            &.icon-linkedin-rect{
+            &.icon-groupin{
               &:before{
                 font-size: 20px;
-                transform: translate(17px,4px);
+
+                transform: translate(2px,6px);
+
               }
             }
           }
@@ -152,9 +155,10 @@ footer{
         }
         .ui-accordion-content{
           display: block!important;
+          padding: 0 0;
           h3{
             display: block;
-            padding: 0px 0 22px 3px;
+            padding: 0px 0 22px 0px;
           }
         }
         ul{

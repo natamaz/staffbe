@@ -1,14 +1,16 @@
 .wrapper{
   .banner{
-    background-image: url(../img/banner.png);
+    background-color: rgba(38,79,88,.4);
+    background-image: url(../img/banner_mob.png);
     background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
-    background-position: center;
-    background-color: rgba(38, 79, 88, 0.4);
     background-blend-mode: multiply;
+    min-height: 480px;
     .container{
       .text_banner{
         padding: 176px 5px 19px 0;
+        max-width: 320px;
         p{
           margin: 12px 0 5px 0;
         }
@@ -35,6 +37,7 @@
             img{
               width: 100%;
               height: 170px;
+              border-radius: 4px 4px 0 0;
             }
           }
           .txt{
@@ -144,7 +147,6 @@
       .btn{
         margin: 44px auto 0;
         padding: 20px 10px 20px 10px;
-        max-width: 288px;
       }
     }
   }
@@ -429,7 +431,7 @@
         }
       }
       .slider1{
-        padding: 0px 0 53px 0;
+        padding: 0px 0 75px;
         .slide{
           background: rgba(64, 154, 174, 0.7);
           border-radius: 8px;
@@ -497,6 +499,7 @@
     padding: 40px 0 40px 0;
 
     .container{
+      flex-wrap: wrap;
       p{
         font-style: normal;
         font-weight: normal;
@@ -505,20 +508,33 @@
         color: #13282D;
         opacity: 0.64;
       }
+      .more{
+        width: 100%;
+      }
       .btn{
         margin: 31px auto 0;
       }
     }
   }
 }
+@media (min-width: 480px){
+  .wrapper{
+    .banner{
+      background-image: url(../img/banner.png);
 
+    }
+  }
+}
 @media (min-width: 768px){
   .wrapper{
     .banner{
+      background-image: url(../img/banner.png);
+      min-height: auto;
       .container{
         .text_banner{
           padding: 50px 5px 50px 0;
           width: 70%;
+          max-width: 70%;
         }
       }
     }
@@ -716,7 +732,8 @@
         .title{
           font-size: 36px;
           line-height: 40px;
-          padding: 40px 40px 33px 0;
+
+          padding: 40px 10px 33px 0;
           span{
             font-size: 37px;
             line-height: 45px;
@@ -785,7 +802,8 @@
           position: absolute;
           bottom: 87px;
           margin: 0;
-          padding: 20px 42px;
+          padding: 20px 41px;
+          width: auto;
           left: 0;
         }
       }
@@ -805,6 +823,7 @@
               padding: 10px 64px 30px 0;
             }
             .ui-accordion-content{
+              padding: 0px 0px 20px;
               p{
                 font-size: 16px;
                 line-height: 23px;
@@ -880,8 +899,8 @@
           position: absolute;
           bottom: 41px;
           left: 0;
-          padding: 20px 41px;
-          max-width: 300px;
+          padding: 20px 42px;
+          width: auto;
         }
       }
     }
@@ -968,6 +987,9 @@
                 height: 56px;
                 border-radius: 50%;
                 filter: grayscale(100%);
+                cursor: pointer;
+                object-fit: cover;
+                object-position: top;
               }
             }
           }
@@ -1054,8 +1076,9 @@
           bottom: -85px;
           left: 0;
           margin: 0;
-          max-width: 288px;
-          padding: 20px 41px;
+          padding: 20px 40px;
+          width: auto;
+
         }
       }
     }
@@ -1172,7 +1195,6 @@
           position: absolute;
           bottom: 87px;
           margin: 0;
-          padding: 20px 42px;
           left: 0;
         }
       }
@@ -1267,8 +1289,7 @@
           position: absolute;
           bottom: 41px;
           left: 0;
-          padding: 20px 41px;
-          max-width: 300px;
+
         }
       }
     }
@@ -1436,17 +1457,32 @@
 
         }
         .btn{
-          position: absolute;
-          bottom: -85px;
-          left: 0;
-          margin: 0;
-          max-width: 288px;
-          padding: 20px 41px;
+
+
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1450px) {
+  .wrapper{
+    .banner{
+      .container{
+        .text_banner{
+          padding: 300px 5px 300px 0;
         }
       }
     }
   }
 }
 @media (min-width: 1920px) {
-
+  .wrapper{
+    .banner{
+      .container{
+        .text_banner{
+          padding: 400px 5px 400px 0;
+        }
+      }
+    }
+  }
 }

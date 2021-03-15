@@ -8,6 +8,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite:false,
         dots: true,
+        adaptiveHeight: true,
         arrows:false,
         responsive: [
             {
@@ -57,6 +58,7 @@ $(document).ready(function () {
             },
 
         ]
+
     });
 
     $(function(){
@@ -65,7 +67,7 @@ $(document).ready(function () {
         $('.slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: false,
+            infinite: true,
             fade: true,
             nextArrow: '<button class="slick-arrow next"><span></span></button>',
             prevArrow: '<button class="slick-arrow prev"><span></span></button>',
@@ -80,14 +82,28 @@ $(document).ready(function () {
         slidesToShow: 9,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        infinite: false,
+        infinite: true,
         arrows:false,
         centerMode: true,
         focusOnSelect: true
     });
     <!-- Slider and -->
 
+    <!-- Accordion -->
+    $( function() {
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            heightStyle: "content"
+        });
+    } );
 
+
+    <!-- Accordion and -->
+
+    $(function() {$('.more').hide()
+        $('#showmemore').click(function(){
+            $('.more').slideToggle()
+        })})
 
 });
 
